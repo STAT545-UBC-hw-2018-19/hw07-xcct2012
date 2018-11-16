@@ -1,0 +1,33 @@
+---
+title: "Powers package"
+author: "Zachary Sherker"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+_Note__: This package allows the user to access the 'powers' functions, which include pow(x), square(x), cube(x), and a boxcox(x) function that performs a Box-Cox transformation on any set of vectors.
+
+If you are looking to streamline your use of power functions, then the 'powers' package is just what you're looking for!
+
+```{r}
+library(powers)
+```
+
+Want squares, cubes, or boxcox? Easily done.
+
+```{r}
+square(1:10)
+cube(1:10)
+boxcox(1:10)
+```

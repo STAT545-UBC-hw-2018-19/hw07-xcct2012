@@ -1,0 +1,34 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# powers
+
+The goal of the 'powers' package is to easily raise any integer to any desired power and perform Box-Cox transformations on any dataset.
+
+## Installation
+
+You can install the released version of powers from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("powers")
+```
+
+## Example
+
+This is a basic example which shows you how to perform a simple Box-Cox transformation:
+
+```{r example}
+boxcox(1:10,2)
+```
+
